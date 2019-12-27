@@ -12,7 +12,7 @@ class CeleryApp(Celery):
 
 celery_app = CeleryApp('my-flask-celery')
 celery_task = celery_app.task
-celery_beat_schdule = celery_app.conf.beat_schdule
+celery_beat_schedule = celery_app.conf.beat_schedule
 
 
-__all__ = ['CeleryApp', 'celery_app', 'celery_task', 'celery_beat_schdule']
+__all__ = ['CeleryApp', 'celery_app', 'celery_task', 'celery_beat_schedule']
