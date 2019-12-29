@@ -2,7 +2,7 @@
 
 ## 启动Flask
 
-`python3 flask_app.py`
+`python3 flask_app.py or falsk run`
 
 ## 启动Celery
 
