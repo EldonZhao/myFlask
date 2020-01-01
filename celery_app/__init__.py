@@ -7,7 +7,7 @@ from celery import Celery
 class CeleryApp(Celery):
     def __init__(self, name):
         super(CeleryApp, self).__init__(name)
-        self.config_from_object('celery_app.celery_config')
+        self.config_from_object('celery_app.config')
 
 
 celery_app = CeleryApp('my-flask-celery')

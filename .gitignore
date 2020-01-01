@@ -2,3 +2,6 @@ __pycache__/
 celerybeat-schedule
 .env
 .flaskenv
+*.log
+*.pid
+app-schedule
