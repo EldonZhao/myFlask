@@ -15,6 +15,6 @@ celery_beat_schedule.update(
         'task': 'app.task1',
         'schedule': crontab(), # 1min
         'args': (5, 2),
-        'options': {'queue': 'app.tasks'}
+        'options': {'queue': 'app'}
     }
 )
