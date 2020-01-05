@@ -7,10 +7,8 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/user', methods=['GET'])
-def get_users(*args, **kwargs):
-    return json.dumps([{'name': 'eldon', 'gendor': 'male'}])
+from service.urls import *
 
-@app.route('/user/<name>', methods=['GET'])
-def get_user_by_name(name):
-    return {'name': name, 'gendor': 'male'}
+@app.errorhandler(404)
+def get_not_found():
+    return 'NOT FOUND', 404
