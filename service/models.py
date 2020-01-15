@@ -4,7 +4,13 @@
 
 from flask_sqlalchemy import SQLAlchemy
 
-from wsgi import db
+from application import db
+
+def row2dict(row):
+    d = {}
+    for column in row.__table__.columns:
+        d[column.name] = str(getattr(row, column.name))
+    return d
 
 class User(db.Model):
     __tablename__ = 'user'
