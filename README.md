@@ -1,4 +1,5 @@
 # myFlask
+A repository for studying python flask.
 
 ## 启动Flask
 
